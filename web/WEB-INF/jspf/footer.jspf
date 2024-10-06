@@ -1,0 +1,62 @@
+
+<%@ page pageEncoding="UTF-8" %>
+
+<footer class="bg-dark text-light mt-5" data-bs-theme="dark">
+	<div class="container-fluid container-lg pt-5 pb-1">
+		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+			<div class="col">
+				<h3>Liên hệ</h3>
+				<hr class="bg-light">
+				<ul class="list-unstyled d-flex flex-column gap-2">
+					<li>
+						<i class="bi bi-envelope"></i>
+						<b>Email:</b> sneaker@gmail.com
+					</li>
+					<li>
+						<i class="bi bi-telephone"></i>
+						<b>Số điện thoại:</b> 0123456789
+					</li>
+					<li>
+						<i class="bi bi-house-door"></i>
+						<b>Địa chỉ:</b> Hà Nội, Việt Nam, Trái Đất, Hệ Mặt Trời
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Dịch vụ</h3>
+				<hr class="bg-light">
+				<ul class="list-unstyled d-flex flex-column gap-2">
+					<li><a href="/sneaker" class="text-light text-decoration-none">Trang chủ</a></li>
+					<li><a href="product" class="text-light text-decoration-none">Sản phẩm</a></li>
+					<li><a href="order" class="text-light text-decoration-none">Đơn hàng</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Theo dõi</h3>
+				<hr class="bg-light">
+				<ul class="list-unstyled d-flex flex-column gap-2">
+					<li>
+						<i class="bi bi-facebook"></i>
+						<a class="text-decoration-none text-light" href="https://facebook.com">Facebook</a>
+					</li>
+					<li>
+						<i class="bi bi-instagram"></i>
+						<a class="text-decoration-none text-light" href="https://instagram.com">Instagram</a>
+					</li>
+					<li>
+						<i class="bi bi-tiktok"></i>
+						<a class="text-decoration-none text-light" href="https://tiktok.com">Tiktok</a>
+					</li>
+					<li>
+						<i class="bi bi-youtube"></i>
+						<a class="text-decoration-none text-light" href="https://youtube.com">Youtube</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<hr class="bg-light">
+		<p class="text-center">
+			© Bản quyền thuộc về <b>Sneaker</b> | Cung cấp bởi <b>Deverloper</b>
+		</p>
+	</div>
+</footer>
