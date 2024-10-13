@@ -83,11 +83,8 @@ public class CartServlet extends HttpServlet {
 		String productDetailIdStr = request.getParameter("productDetailId");
 		int productDetailId = Integer.parseInt(productDetailIdStr);
 
-		for (ProductDetail productDetail : carts.keySet()) {
-			if (productDetail.getProductDetailId() == productDetailId) {
-				carts.remove(productDetail);
-			}
-		}
+		ProductDetail productDetail = ProductDetail.builder().productDetailId(productDetailId).build();
+		carts.remove(productDetail);
 
 		session.setAttribute("carts", carts);
 		response.sendRedirect("/sneaker/cart");
@@ -101,15 +98,12 @@ public class CartServlet extends HttpServlet {
 
 		String productDetailIdStr = request.getParameter("productDetailId");
 		int productDetailId = Integer.parseInt(productDetailIdStr);
+		ProductDetail productDetail = ProductDetail.builder().productDetailId(productDetailId).build();
 
 		String quantityStr = request.getParameter("quantity");
 		int quantity = Integer.parseInt(quantityStr);
 
-		for (ProductDetail productDetail : carts.keySet()) {
-			if (productDetail.getProductDetailId() == productDetailId) {
-				carts.replace(productDetail, quantity);
-			}
-		}
+		carts.replace(productDetail, quantity);
 
 		session.setAttribute("carts", carts);
 		response.sendRedirect("/sneaker/cart");

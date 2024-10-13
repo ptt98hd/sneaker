@@ -22,7 +22,7 @@
 							<tr class="row row-cols-3">
 								<th class="col">Sản phẩm</th>
 								<th class="col">Số lượng</th>
-								<th class="col">Tổng tiền</th>
+								<th class="col">Thành tiền</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -69,18 +69,38 @@
 					<form action="order" method="post" class="bg-body-tertiary border rounded p-3">
 						<h1 class="text-center">Đặt hàng</h1>
 						<hr>
+						<!--Customer Name-->
 						<label for="customerName" class="form-label">Tên khách hàng</label>
-						<div class="input-group">
+						<div class="input-group mb-3">
 							<i class="bi bi-person input-group-text"></i>
 							<input type="text" name="customerName"
-								   placeholder="Ví dụ: Nguyễn Văn A"
+								   placeholder="Nguyễn Văn A"
 								   class="form-control" id="customerName">
 						</div>
+
+						<!--Customer Phone-->
+						<label for="phone" class="form-label">Số điện thoại</label>
+						<div class="input-group mb-3">
+							<i class="bi bi-telephone input-group-text"></i>
+							<input type="tel" name="phone"
+								   placeholder="0123456789"
+								   class="form-control" id="phone">
+						</div>
+
+						<!--Customer Address-->
+						<div class="form-floating mb-3">
+							<textarea name="address" rows="10"
+									  class="form-control" id="address"></textarea>
+							<label for="address" class="form-label">Địa chỉ</label>
+						</div>
+
+						<button class="btn btn-danger w-100">Mua Hàng</button>
 					</form>
 				</div>
 			</div>
 		</main>
 
+		<%@include  file="/WEB-INF/jspf/footer.jspf" %>
 		<%@include file="/WEB-INF/jspf/script.jspf"%>
     </body>
 </html>

@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/ow3n/Projects/Netbeans/Sneaker/src/java/entity/Order.java</file>
+            <file>file:/home/ow3n/Projects/Netbeans/Sneaker/src/java/entity/OrderDetail.java</file>
+            <file>file:/home/ow3n/Projects/Netbeans/Sneaker/web/order.jsp</file>
+            <file>file:/home/ow3n/Projects/Netbeans/Sneaker/src/java/entity/Customer.java</file>
+        </group>
     </open-files>
 </project-private>
